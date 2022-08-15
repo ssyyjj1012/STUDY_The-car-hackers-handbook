@@ -1,16 +1,44 @@
-## SocketCAN
-리눅스를 운영체제로 활용하거나 가상머신에 설치해 사용하는 경우 해당 리눅스에서 제공하는 범용 인터페이스
-- 오픈소스 개발 사이트인 BerliOS라는 곳에서 2006년에 개발했다.
 
-인터넷 카드처럼 네트워크 디바이스로서 CAN 드라이버의 구현과 네트워크 소켓 프로그래밍 인터페이스를 통해 CAN 버스에 접근하는 애플리케이션을 나타내기 위해 사용되고 있다.
-
-폭스바겐 그룹 연구소에서는 SocketCAN을 구현했던 원본 프로그램 공개
-- 내장형 CAN 칩과 CAN 카드 드라이버, 외부 USB와 시리얼 형태의 CAN 디바이스, 가상 CAN 디바이스까지 지원한다.
-- can-utils 패키지는 일부 애플리케이션과 툴들을 제공해 CAN 네트워크 디바이스들과의 동작, 특정 CAN 프로토콜들과 가상 CAN 환경의 구성 등을 지원한다.
-
-리눅스 네트워킹 스택에 속해 있어 CAN을 지원하는 툴을 만드는 것이 매우 쉽다.
-- SocketCAN 애플리케이션들은 PF_CAN 네트워크 프로토콜 계열을 적용한 표준 C 소켓 프로그래밍 함수들을 이용할 수 있다.
-
-커널을 통해 CAN 디바이스 드라이버를 제어하고 연결된 네트워킹 하드웨어와 통신해 사용자 영역에 일반적인 인터페이스 역할을 하는 유틸리티들을 제공
-
-
+![슬라이드1](https://user-images.githubusercontent.com/52689953/184705443-74ea063f-c293-45bc-becb-2ea99247eb06.PNG)
+![슬라이드2](https://user-images.githubusercontent.com/52689953/184705445-e865c63b-21f7-41de-af89-fe458cad0599.PNG)
+![슬라이드3](https://user-images.githubusercontent.com/52689953/184705447-8a68b106-64d1-4ac2-b43f-1c2411f84dc0.PNG)
+![슬라이드4](https://user-images.githubusercontent.com/52689953/184705448-b00b2d8c-29e6-4e65-ba26-ac952b09aca3.PNG)
+![슬라이드5](https://user-images.githubusercontent.com/52689953/184705449-8ccbbe84-201a-4fa9-8f35-fe19572fce1f.PNG)
+![슬라이드6](https://user-images.githubusercontent.com/52689953/184705453-3a5db1a5-bc4b-4549-9d7c-9ff1745d377b.PNG)
+![슬라이드7](https://user-images.githubusercontent.com/52689953/184705455-08f4c160-2122-4e7f-8956-8da05c398374.PNG)
+![슬라이드8](https://user-images.githubusercontent.com/52689953/184705457-2adc5bb1-b51c-4050-b22d-e85855ac1d73.PNG)
+![슬라이드9](https://user-images.githubusercontent.com/52689953/184705459-3702e720-351e-49d3-afaa-f98079afa37e.PNG)
+![슬라이드10](https://user-images.githubusercontent.com/52689953/184705460-c83d58b6-bb06-4f00-b61b-6da7152e427a.PNG)
+![슬라이드11](https://user-images.githubusercontent.com/52689953/184705462-cbdd92db-b5f9-4737-855b-f26b68d103b6.PNG)
+![슬라이드12](https://user-images.githubusercontent.com/52689953/184705465-c2f3b0cd-f9fe-4559-9cd1-beec39d9598d.PNG)
+![슬라이드13](https://user-images.githubusercontent.com/52689953/184705467-144f90cb-e6c3-4b3d-8842-258890b692e7.PNG)
+![슬라이드14](https://user-images.githubusercontent.com/52689953/184705471-fec39a3b-5030-47b7-92ec-c649d0468130.PNG)
+![슬라이드15](https://user-images.githubusercontent.com/52689953/184705473-8b7073f9-ec19-4b95-be78-9a1bec9d857d.PNG)
+![슬라이드16](https://user-images.githubusercontent.com/52689953/184705474-b4976728-eae2-403a-8d57-bf3ffa48bee8.PNG)
+![슬라이드17](https://user-images.githubusercontent.com/52689953/184705477-29bec3b0-8773-427d-bee7-4af1542b1419.PNG)
+![슬라이드18](https://user-images.githubusercontent.com/52689953/184705479-822cbf3e-59b8-49ff-b5b6-be65a5a4d4ca.PNG)
+![슬라이드19](https://user-images.githubusercontent.com/52689953/184705480-6213a98c-39cc-4127-b3ad-2577713e15a3.PNG)
+![슬라이드20](https://user-images.githubusercontent.com/52689953/184705482-3aa4563e-58b0-44d6-a76c-ea32819eacd0.PNG)
+![슬라이드21](https://user-images.githubusercontent.com/52689953/184705485-d3e35ccb-1a95-4bbe-97d4-c1bb8aea8e06.PNG)
+![슬라이드22](https://user-images.githubusercontent.com/52689953/184705487-3094fe5c-a937-4138-b07a-8ce187305ba0.PNG)
+![슬라이드23](https://user-images.githubusercontent.com/52689953/184705489-f7e25a86-44f7-44ff-8995-3e3ee364c85f.PNG)
+![슬라이드24](https://user-images.githubusercontent.com/52689953/184705492-509932c6-cb69-40d9-938e-e118069bf4af.PNG)
+![슬라이드25](https://user-images.githubusercontent.com/52689953/184705494-32158b2a-fcb5-4f95-82f6-33c77c0e303b.PNG)
+![슬라이드26](https://user-images.githubusercontent.com/52689953/184705496-910543bb-2159-45d2-a35d-89cb596875f9.PNG)
+![슬라이드27](https://user-images.githubusercontent.com/52689953/184705498-cf568dfd-9920-4d19-84c6-51d628b5a40e.PNG)
+![슬라이드28](https://user-images.githubusercontent.com/52689953/184705501-ea99d920-d743-4a1f-a757-27e241be706b.PNG)
+![슬라이드29](https://user-images.githubusercontent.com/52689953/184705503-ece4c40d-a2cb-4171-928d-6239f6f5de8c.PNG)
+![슬라이드30](https://user-images.githubusercontent.com/52689953/184705506-069b37ed-c611-45a9-ac73-ecae237b63bd.PNG)
+![슬라이드31](https://user-images.githubusercontent.com/52689953/184705509-b14205c0-6f1f-4edc-b871-46766f13e99e.PNG)
+![슬라이드32](https://user-images.githubusercontent.com/52689953/184705511-1c5247dc-b4b5-4c5d-8921-212df0c94649.PNG)
+![슬라이드33](https://user-images.githubusercontent.com/52689953/184705512-ba1d04da-cab0-42ab-b609-250af80eedc5.PNG)
+![슬라이드34](https://user-images.githubusercontent.com/52689953/184705516-de6874c6-9de7-4d23-b306-390a7e93bafc.PNG)
+![슬라이드35](https://user-images.githubusercontent.com/52689953/184705518-8aa9c82e-dc66-4abf-95cd-b81e97a74111.PNG)
+![슬라이드36](https://user-images.githubusercontent.com/52689953/184705424-66abd365-f7a6-4499-a0de-a375b0f41ff9.PNG)
+![슬라이드37](https://user-images.githubusercontent.com/52689953/184705429-e59037b5-a74f-4a23-9eea-0c287df9870d.PNG)
+![슬라이드38](https://user-images.githubusercontent.com/52689953/184705431-e478b0bc-fce2-46e8-a4d8-21654b1f7c34.PNG)
+![슬라이드39](https://user-images.githubusercontent.com/52689953/184705433-6a9de2d2-5227-471f-b82f-af44f2fb4f5a.PNG)
+![슬라이드40](https://user-images.githubusercontent.com/52689953/184705435-e553acbe-8a2c-4195-a981-b9777d255e39.PNG)
+![슬라이드41](https://user-images.githubusercontent.com/52689953/184705436-8e91be64-14d4-4866-b749-ab7c1853aba0.PNG)
+![슬라이드42](https://user-images.githubusercontent.com/52689953/184705438-df2c9944-14a9-495a-9e25-82c957aa4764.PNG)
+![슬라이드43](https://user-images.githubusercontent.com/52689953/184705440-929c3d86-f2a0-4ea0-b56b-4751fc81f3b1.PNG)
